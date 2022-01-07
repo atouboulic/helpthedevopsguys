@@ -15,3 +15,7 @@ Pour pouvoir faire un déploiement terraform, il suffit d'executer 3 commandes :
 L'avantage de terraform est que si l'on fait plusieurs fois la commande apply, elle n'a aucun effet car tout est déjà déployé.
 
 Le déploiement génére un fichier tfstate qui contient l'ensemble de l'infra déployée. Il est recommandé de stocker ce fichier sur un bucket S3 pour pouvoir reutiliser les meta données qu'il contient lors d'un deploiement ansible (via un inventaire dynamique).
+
+### Note : 
+
+Il est possible de définir des templates pour lancer un cloud-init au premier démarrage de la VM. Cela permet nottament d'ajouter des clés SSH, créer des comptes, ou installer quelques outils.. Mais c'est risqué car toute modification de cette config après un terraform apply entrainera une recréation de la VM si on relance un terrafor apply !!
