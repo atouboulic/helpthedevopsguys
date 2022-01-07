@@ -9,7 +9,7 @@ Pour effectuer un déploiement ansible il faut :
 
 ** Role Ansible **
 
-Le role ansible décrit les étapes l'ensemble des tâches à réaliser pour déployer une application (ou tout simplement configurer une machine)
+Le role ansible décrit l'ensemble des tâches à réaliser pour déployer une application (ou tout simplement configurer une machine)
 
 ** Inventaire Ansible **
 
@@ -17,9 +17,9 @@ Un inventaire ansible peut être statique ou dynamique (via un script python afi
 Il contient un ensemble de clé/valeur permettant la configuration de l'applicatif déployé.
 Il peut contenir un vault pour stocker des secrets protégé par un mot de passe.
 
-Les clés/valeurs peuvent être stockées dans des group_vars (clé/valeur applicable a un ensemble d'hosts) ou des hosts_vars (clé / valeurs liées à un host précis déclaré dans l'inventaire)
+Les clés/valeurs peuvent être stockées dans des group_vars (clé/valeur applicable à un ensemble d'hosts) ou des hosts_vars (clé / valeurs liées à un host précis déclaré dans l'inventaire)
 
-Les clés valeurs peuvent surchargée par des variables d'environnement (ou le flag -e lors de l'execution d'un playbook)
+Les clés valeurs peuvent être surchargées par des variables d'environnement (ou le flag -e lors de l'execution d'un playbook)
 
 **  Playbook Ansible **
 
@@ -27,7 +27,7 @@ Le playbook permet de lier un role à un inventaire
 
 ** Recommandation **
 
-Il est recommandé de créer des rôles idempotents afin que 2 éxécutions consecutives n'entrainent pas de changement lors sur la (les) serveurs lors de la deuxieme exécution. 
+Il est recommandé de créer des rôles idempotents afin que 2 éxécutions consecutives n'entrainent pas de changement sur le(s) serveurs lors de la deuxieme exécution. 
 
 ** Tester son rôle ansible **
 
