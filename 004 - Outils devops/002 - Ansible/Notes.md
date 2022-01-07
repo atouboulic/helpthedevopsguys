@@ -25,6 +25,12 @@ Les clés valeurs peuvent être surchargées par des variables d'environnement (
 
 Le playbook permet de lier un role à un inventaire
 
+Pour exécuter un playbook : 
+
+```shell 
+./ansible-playbook -i inventory/myinventory playbook/myplaybook.yml [--ask-vault-pass]
+```
+
 ## Recommandations
 
 Il est recommandé de créer des rôles idempotents afin que 2 éxécutions consecutives n'entrainent pas de changement sur le(s) serveurs lors de la deuxieme exécution. 
@@ -32,4 +38,5 @@ Il est recommandé de créer des rôles idempotents afin que 2 éxécutions cons
 ## Tester son rôle ansible
 
 Il est recommandé de tester son rôle ansible avant de le rendre public, il existe un outil permettant de tester son role facilement : Molecule.
+
 
