@@ -23,7 +23,7 @@ Les clés valeurs peuvent être surchargées par des variables d'environnement (
 
 ##  Playbook Ansible
 
-Le playbook permet de lier un role à un inventaire
+Le playbook permet d'executer un/plusieurs roles ansibles
 
 Pour exécuter un playbook : 
 
