@@ -12,3 +12,6 @@ Le devops est né de cette problématique et doit permettre de fluidifier la com
 Le devops doit prêcher les bonnes pratiques à mettre en place côté développeur (par exemple les 12 factors)
 
 Le devops communique également avec les opérateurs afin de disposer des outils pour automatiser les déploiement (mise en place de chaine CI/CD ou autre) 
+
+Je suis tombé sur cette vidéo hier (le 18/01/2022) et je trouve quelle resume tres bien le metier de devops : https://www.youtube.com/watch?v=0yWAtQ6wYNM
+
